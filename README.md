@@ -1,0 +1,200 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>생기부 작성 역량 강화 퀴즈</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: linear-gradient(to bottom right, #7F7FD5, #86A8E7, #91EAE4);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 20px;
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    .quiz-container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #ffffffcc;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .question {
+      margin-bottom: 30px;
+    }
+    .question h3 {
+      color: #3f51b5;
+    }
+    .options button {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #7f7fd5;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .options button:hover {
+      background: #5a55ae;
+    }
+    .answer {
+      margin-top: 12px;
+      padding: 12px;
+      background: #e0e7ff;
+      border-left: 4px solid #3f51b5;
+      border-radius: 8px;
+      display: none;
+      color: #1a237e;
+      font-weight: bold;
+    }
+    .toggle-btn {
+      display: block;
+      margin: 30px auto 0;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      background: #5a55ae;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .toggle-btn:hover {
+      background: #3f3c91;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="로고">
+    <h1>생기부 작성 역량 강화<br>아이스브레이킹 퀴즈</h1>
+  </header>
+
+  <div class="quiz-container">
+
+    <div class="question">
+      <h3>1️⃣ 다음 중 생기부 기재 시 가장 중요하게 고려해야 할 학생의 역량은?</h3>
+      <div class="options">
+        <button onclick="showAnswer(this)">① 시험 점수를 꾸준히 90점 이상 받는 역량</button>
+        <button onclick="showAnswer(this)">② 교사의 지시를 묵묵히 따르는 역량</button>
+        <button onclick="showAnswer(this)">③ 주어진 과제를 주도적으로 탐구하고 해결하는 역량</button>
+        <button onclick="showAnswer(this)">④ 친구들과 싸우지 않고 사이좋게 지내는 역량</button>
+      </div>
+      <div class="answer">정답: ③</div>
+    </div>
+
+    <div class="question">
+      <h3>2️⃣ 세특 작성 시 가장 지양해야 할 표현은?</h3>
+      <div class="options">
+        <button onclick="showAnswer(this)">① 수업 시간 내내 집중하며 발표에 적극적으로 참여함.</button>
+        <button onclick="showAnswer(this)">② 인공지능 관련 보고서를 작성하며 심화 탐구 능력을 보여줌.</button>
+        <button onclick="showAnswer(this)">③ 조별 활동 시 리더십을 발휘하여 우수한 결과 도출.</button>
+        <button onclick="showAnswer(this)">④ 수학 경시대회에서 우수한 성적을 거두어 수학적 재능이 뛰어남.</button>
+      </div>
+      <div class="answer">정답: ④</div>
+    </div>
+
+    <!-- 나머지 문제는 동일하게 구성 -->
+    <!-- 3번부터 7번까지 문제 영역은 위와 같은 패턴으로 그대로 유지 -->
+
+    <div class="question">
+      <h3>3️⃣ 생기부와 실제 학생 모습이 다를 때 가장 먼저 할 일은?</h3>
+      <div class="options">
+        <button onclick="showAnswer(this)">① "이게 너라고?" 묻는다.</button>
+        <button onclick="showAnswer(this)">② 동료 교사와 함께 놀란다.</button>
+        <button onclick="showAnswer(this)">③ 다시 학생의 태도와 활동을 유심히 관찰한다.</button>
+        <button onclick="showAnswer(this)">④ 학생 의견만 반영한다.</button>
+      </div>
+      <div class="answer">정답: ③</div>
+    </div>
+
+    <div class="question">
+      <h3>4️⃣ 독서활동상황 도서 선정 시 추천도서를 기재하고 싶을 때 적절한 방법은?</h3>
+      <div class="options">
+        <button onclick="showAnswer(this)">① 독후감 제출을 강요한다.</button>
+        <button onclick="showAnswer(this)">② 협박한다.</button>
+        <button onclick="showAnswer(this)">③ 학생 진로나 흥미와 연결해 설득하고 활동 연계.</button>
+        <button onclick="showAnswer(this)">④ 몰래 바꿔서 기재한다.</button>
+      </div>
+      <div class="answer">정답: ③</div>
+    </div>
+
+    <div class="question">
+      <h3>5️⃣ 창의적 체험활동 특기사항에 가장 적절한 내용은?</h3>
+      <div class="options">
+        <button onclick="showAnswer(this)">① 점심시간마다 급식실에 일찍 줄 서는 모습.</button>
+        <button onclick="showAnswer(this)">② 축제 때 싸우지 않고 행사 마침.</button>
+        <button onclick="showAnswer(this)">③ 동아리 부장으로 갈등 중재 및 아이디어 제안, 발전 기여.</button>
+        <button onclick="showAnswer(this)">④ 쉬는 시간마다 잠만 잠.</button>
+      </div>
+      <div class="answer">정답: ③</div>
+    </div>
+
+    <div class="question">
+      <h3>6️⃣ 학생이 "저 사실 게으른데…" 라고 하면, 교사의 적절한 반응은?</h3>
+      <div class="options">
+        <button onclick="showAnswer(this)">① "선생님 눈엔 그렇게 보였어!"</button>
+        <button onclick="showAnswer(this)">② "다음부턴 사실대로 써줄게."</button>
+        <button onclick="showAnswer(this)">③ "네가 그렇게 느끼는구나. 선생님은 이런 점에서 느꼈는데, 어떤 부분이 그랬니?"</button>
+        <button onclick="showAnswer(this)">④ 부모님께 전화한다.</button>
+      </div>
+      <div class="answer">정답: ③</div>
+    </div>
+
+    <div class="question">
+      <h3>7️⃣ 생기부 작성 시 가장 중요하게 생각해야 할 것은?</h3>
+      <div class="options">
+        <button onclick="showAnswer(this)">① 글자 수 채우기</button>
+        <button onclick="showAnswer(this)">② 긍정적인 내용만 기재</button>
+        <button onclick="showAnswer(this)">③ 성장 과정과 개별 특성을 구체적으로 기록</button>
+        <button onclick="showAnswer(this)">④ 민원 안 들어오게 무난하게 작성</button>
+      </div>
+      <div class="answer">정답: ③</div>
+    </div>
+
+    <!-- 정답 토글 버튼 -->
+    <button class="toggle-btn" onclick="toggleAllAnswers()">정답 전체 보기</button>
+
+  </div>
+
+  <script>
+    function showAnswer(button) {
+      let answerBox = button.closest('.question').querySelector('.answer');
+      answerBox.style.display = 'block';
+    }
+
+    let isAnswerVisible = false;
+    function toggleAllAnswers() {
+      let answers = document.querySelectorAll('.answer');
+      isAnswerVisible = !isAnswerVisible;
+      answers.forEach(answer => {
+        answer.style.display = isAnswerVisible ? 'block' : 'none';
+      });
+
+      // 버튼 텍스트도 바꿔주기
+      let toggleButton = document.querySelector('.toggle-btn');
+      toggleButton.textContent = isAnswerVisible ? '정답 전체 숨기기' : '정답 전체 보기';
+    }
+  </script>
+
+</body>
+</html>
